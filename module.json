@@ -1,0 +1,21 @@
+{
+  "id": "foundry-map-system",
+  "title": "Foundry Map System",
+  "description": "Mapa interativo com rotas, pontos de interesse e controle de tempo para Foundry VTT.",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Henrique Rosa Freire",
+      "url": "https://github.com/LordbaironBR"
+    }
+  ],
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11"
+  },
+  "esmodules": ["scripts/main.js"],
+  "styles": ["styles/styles.css"],
+  "scripts": [],
+  "manifest": "https://raw.githubusercontent.com/LordbaironBR/foundry-map-system/main/module.json",
+  "download": "https://github.com/LordbaironBR/foundry-map-system/archive/refs/heads/main.zip"
+}

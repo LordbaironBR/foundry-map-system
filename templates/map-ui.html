@@ -1,18 +1,15 @@
-<!-- Leaflet CSS -->
+<!-- map-ui.html -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <div id="map-container"></div>
 
-<script>
-    // Inicializa o mapa
-    const map = L.map('map-container').setView([40.730610, -73.935242], 13); // Coordenadas iniciais (Nova York)
-
-    // Adiciona o tile layer do MapTiler (exemplo com OpenStreetMap gratuito)
-    L.tileLayer('https://api.maptiler.com/maps/streets-v2/256/{z}/{x}/{y}.png?key=SUA_API_KEY', {
-        attribution: '&copy; <a href="https://www.maptiler.com/">MapTiler</a>',
-        maxZoom: 19,
-    }).addTo(map);
-</script>
+<style>
+    #map-container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+</style>
